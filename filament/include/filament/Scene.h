@@ -112,6 +112,14 @@ public:
     void remove(utils::Entity entity);
 
     /**
+     * Removes a contiguous list of entities to the Scene.
+     *
+     * @param entities Array containing entities to remove from the scene.
+     * @param count Size of the entity array.
+     */
+    void removeEntities(const utils::Entity* entities, size_t count);
+
+    /**
      * Returns the number of Renderable objects in the Scene.
      *
      * @return number of Renderable objects in the Scene.
